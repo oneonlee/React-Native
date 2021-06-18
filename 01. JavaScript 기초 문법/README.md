@@ -876,4 +876,6 @@ for (let i = 0; i < mise_list.length; i++) {
 }
 ```
 
-# 참고자료 : [[스파르타코딩클럽] 앱개발 종합반 - 1주차](https://www.notion.so/1-4a5c6ffbbdac43bb8e91850dfa02215e)
+#### 참고자료
+- [[스파르타코딩클럽] 앱개발 종합반 - 1주차](https://www.notion.so/1-4a5c6ffbbdac43bb8e91850dfa02215e)
+- [서울시 미세먼지 값](http://openapi.seoul.go.kr:8088/6d4d776b466c656533356a4b4b5872/json/RealtimeCityAir/1/99)
