@@ -11,8 +11,8 @@ function checkEmail(email){
 	...
 }
 
-checkEmail('gunhee21@gmail.com') // 이메일이 맞습니다
-checkEmail('gunhee21$gmail.com') // 이메일이 아닙니다.
+checkEmail('oneonlee@gmail.com') // 이메일이 맞습니다
+checkEmail('oneonlee$gmail.com') // 이메일이 아닙니다.
 ```
 
 Q1. 구글에 "자바스크립트 indexOf"라고 검색 한 다음 indexOf를 이용하여 풀어보세요.
