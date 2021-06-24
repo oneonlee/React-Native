@@ -220,6 +220,25 @@ expo 패스워드 입력란이 차례로 나오고, 차례대로 입력하면 �
     - 맥 : command + c
   - 앱을 실행시키고 나면 expo 앱을 어디서 확인 할 지는 선택해야 합니다.
 
+- [macOS] `Error: EMFILE: too many open files, watch` 오류가 발생하는 경우
+- 1. 아이클라우드 데스크탑 동기화가 켜져 있는지 확인을 해보세요! 끄는 방법은 다음처럼 진행하시면 됩니다. 
+  - [https://appletoolbox.com/how-to-stop-icloud-syncing-desktop-folders/](https://appletoolbox.com/how-to-stop-icloud-syncing-desktop-folders/)
+    - 시스템 환경설정에 들어가신 후
+    - Apple ID 선택 후
+    - "ICloud Drive" 의 "옵션" 을 누르시고
+    - "데스크탑 및 문서 폴더" 체크해제
+    - 
+<img width="780" alt="스크린샷 2021-06-25 오전 12 50 10" src="https://user-images.githubusercontent.com/73745836/123293898-53ccde80-d54f-11eb-884b-9b7633e9a1dd.png">
+
+- 2. 아이클라우드 동기화가 켜져 있지 않다면, `watchman` 이라는 프로그램을 설치하셔야 할 수 있습니다. 
+  - [https://brew.sh/index_ko](https://brew.sh/index_ko) 의 설명을 따라 brew를 설치하신 후
+  - `brew install watchman` 명령으로 설치해보세요!
+
+- 3. 만약! 아래와 같은 오류가 발생하며 `brew install watchman` 명령에 실패한다면?!
+  - ![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fe85acc31-d96c-4309-8754-471f3c8c64da%2F_2021-04-03__4.58.46.png?table=block&id=50d10e83-c462-40f9-b98e-8b1f1a704109&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=3170&userId=&cache=v2)
+  - `git -C $(brew --repository homebrew/core) checkout master` 명령을 실행해주세요!
+  - 이후 다시 `brew install watchman` 을 해주세요!
+
 ![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F01d4effa-7d6a-42b6-b52f-837308576008%2FUntitled.png?table=block&id=bccb6a33-40fd-4e8d-93db-475c9d3d9d6b&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=3810&userId=&cache=v2)
 
 자동으로 열린 Expo 개발자 도구 왼편에는 여러 버튼이 존재합니다.
@@ -247,7 +266,7 @@ expo 패스워드 입력란이 차례로 나오고, 차례대로 입력하면 �
 - 초반에 리액트 네이티브 & Expo는 안드로이드, IOS, 웹 세 플랫폼에 대응하는 애플리케이션을 만들 수 있다고 언급한 바 있습니다. 바로 지금 우리는 세 플랫폼 중 웹에서 애플리케이션을 띄워 본겁니다!
 
 - 그런데 `expo start` 명령어 실행 결과를 보면, QR코드가 나타나는 것을 볼 수 있습니다. 
-- 여러분들 휴대폰에 Expo 클라이언트 앱이 설치되어 있단 가정하에, 휴대폰 카메라로 저 QR코드를 인식해보시기 바랍니다. 
+- 여러분들 휴대폰에 Expo 클라이언트 앱이 설치되어 있단 가정하에, 휴대폰 카메라로 QR코드를 인식해보시기 바랍니다. 
 
 - 그럼 여러분들 휴대폰에 설치되어 있는 Expo 클라이언트 앱을 열까? 라고 물어보며 켜줘!라고 클릭을 하게되면, 지금 컴퓨터에서 여러분들이 expo start로 실행시킨 Expo 서버 위에서 돌아가고 있는 Expo 앱을 휴대폰에서, 더 정확히는 Expo 클라이언트 앱에서 확인 할 수 있습니다.
   - ![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F1b7f956e-d97b-45d9-ac6b-89c2ca4fac83%2FUntitled.png?table=block&id=5f61e82d-270b-4e3b-b0f7-39136c575a61&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=2220&userId=&cache=v2)
